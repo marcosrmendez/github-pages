@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# script/settings: variables, configurations and settings
+
+set -e
+set -o errexit
+set -o errtrace
+
+cd $(dirname $0)/..
+
+HOME_DIR=/home/vagrant/website
+
+#e.g. marcosrmendez/marcosrmendez.github.io
+GITHUB_REPONAME="name/project"
+
+#branch could be master, depending on the use case
+GITHUB_PUBLISH_BRANCH="gh-pages"
