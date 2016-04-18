@@ -13,3 +13,11 @@ The Vagrant box includes a basic set of scripts based on Github's
 4. Edit your github repo address at [script/settings](script/settings)
 5. Run `script/cibuild` to generate the site
 6. Run `script/deploy` override the _gh-pages_ branch with the newly generated site
+
+## Vagrantfile
+
+There a couple of commented lines which enable the following:
+
+* Mapping ssh keys from the host to the guest vm
+* Setting your host git identity automatically on the guest
+* Starting and mapping the port of the jekyll server automatically
